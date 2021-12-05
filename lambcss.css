@@ -1,0 +1,446 @@
+body{
+    margin: 0;
+}
+.media img{
+    border-radius: 15px;
+}
+.logo{
+    border-radius: 25px;
+}
+.header1 h1{
+    padding-left: 5px;
+    color: white;
+}
+header{
+    /* background: linear-gradient(45deg,#7c0bd8,#e00d3b); */
+    background: linear-gradient(45deg,#eedf08,#e00d3b);
+   position: relative;
+   width: 100%;
+   margin-bottom: 20px;
+   /* padding-top:50px; */
+   /* padding-bottom: 30px; */
+   /* clip-path: polygon(0% 0%,100% 0%,100% 0%,0% 100%,0% 0%); */
+   /* transform: skew(0deg,-2deg)translateY(-40px); */
+}
+.sticky{
+   position: fixed;
+   width: 100%;
+   background: linear-gradient(45deg,#eedf08,#e00d3b);
+}
+
+.nav-area li{
+    display: inline-block;
+    padding:5px 20px;  
+    border-radius: 10px;
+}
+header button{
+   border: 0;
+   background-color: white;
+   font-weight: bold;
+   border-radius: 10px;
+   color: #ff0057;
+}
+
+.header1{
+    display:flex ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+padding-right: 10px;
+padding-left: 10px;
+/* background-color: white; */
+}
+
+header button:hover{
+    color:blue;
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+}
+
+.contact{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.media{
+padding:10px;
+}
+.media:hover{
+font-size: 30px;
+}
+
+
+.nav-area2{
+    display: none;
+    color: black;
+
+}
+.nav-area2 li{
+    display: inline-block;
+    padding: 5px;
+    color: black;
+}
+.nav-area2 button{
+    color: black;
+    font-weight: bold;
+font-size: 13px;
+}
+.nav-area2 button:hover{
+    color:blue;
+    border-bottom: 2px solid blue;
+}
+
+
+@media only screen and (max-width:1405px){
+    .media{
+        display: none;
+    }
+}
+@media only screen and (max-width:1197px){
+.contact{
+    display: none;
+}
+}
+@media only screen and (max-width:1064px){ 
+  .nav-area{
+     display: none;
+ }
+ .nav-area2{
+     display: inline-block;
+ }
+ .header2 nav{
+     text-align: center;
+ }
+}
+@media only screen and (max-width:693px){ 
+    .nav-area2{
+        display: none;
+    }
+}
+
+.home{
+   height: 720px;
+   background: url(Matthew2.jpg);
+   background-size:100% 700px;
+   background-repeat: no-repeat;
+   animation: slide 30s infinite;
+   margin: 20px;
+   margin-top:0 ;
+  /* clip-path: polygon(0 8%,100% 0%,100% 100%,0% 100%); */
+}
+@keyframes slide{
+    25%{
+        background: url(keyboard2.jpg);
+         background-size:100% 700px;
+         background-repeat: no-repeat;
+    }
+    50%{
+        background: url(praying.jpg);
+         background-size:100% 700px;
+         background-repeat: no-repeat;
+    }
+    75%{
+        background: url(Worship.jpg);
+         background-size:100% 700px;
+         background-repeat: no-repeat;
+    }
+    100%{
+        background: url(Matthew2.jpg);
+         background-size:100% 700px;
+         background-repeat: no-repeat;
+    }
+}
+
+.tambaram{
+ position:absolute;
+ bottom: 0;
+ top:600px;
+ left: 10%;
+}
+.avadi{
+    position:absolute;
+ bottom: 0;
+ top:600px;
+ right: 10%;
+}
+.home-content{
+    color: white;
+}
+.home-content h3{
+    margin: 0;
+    border-bottom: 2px solid white;
+}
+.home-content h5{
+    margin: 0;
+    font-size: 16px;
+    color:rgb(194, 190, 193);
+}
+.home-content p{
+    margin: 0;
+}
+.home-content a{
+    color: white;
+}
+.watch{
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.watch-hl{
+text-align: center;
+border-bottom: 3px solid black;
+margin-left: 42%;
+margin-right: 42%;
+font-weight:bold;
+font-size: 30px;
+margin-top: 20px;
+margin-bottom: 40px;
+padding-top: 80px;
+}
+
+.live-hl{
+    text-align: center;
+}
+.live-stream{
+    margin-right: 10%;
+    margin-left:10% ;
+    height: 500px;
+    
+    background-color: dimgray;
+}
+.no-live{
+  display:grid;
+  place-items: center;
+}
+.video-gallery{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(48, 46, 46);
+   
+}
+.message{
+    margin-bottom: 70px;
+}
+.video-gallery-hl{
+    text-align: center;
+    font-weight:bolder;
+    font-size: 25px;
+    color: whitesmoke;
+    padding-bottom: 50px;
+}
+.message-hl{
+text-align: center;
+font-weight:bolder;
+    font-size: 20px;
+    color: whitesmoke;
+    padding-bottom: 50px;
+}
+.music-videos-hl{
+    text-align: center;
+    font-weight:bolder;
+        font-size: 20px;
+        color: whitesmoke;
+        padding-bottom: 50px;
+    }
+.youtube-videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.video-gallery iframe{
+padding:30px;
+}
+
+@media only screen and (max-width:1873px){
+    .youtube-videos{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media only screen and (max-width:1253px){
+    .youtube-videos{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media only screen and (max-width:644px){
+    .video-gallery iframe{
+        width: 400px;
+        height:255px
+        }
+}
+.services{
+    /* padding-left:60px; */
+    /* padding-right: 60px; */
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background: linear-gradient(45deg,#eedf08,#e00d3b);
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.services a{
+    color:black;
+}
+.services-hl{
+    text-align: center;
+   font-size: 15px;
+   margin-left: 20%;
+   margin-right:20%;
+   border-bottom: 3px solid black;
+   padding-top: 80px;
+}
+.service-location{
+    display: flex;
+   padding-bottom: 30px;
+   border-bottom: 2px solid black;
+}
+.tambaram-service{
+    padding-right: 10%;
+}
+.avadi-service{
+    padding-left: 10%;
+    border-left: 2px solid black;
+}
+.english-service{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.communion-service{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.online-all-night-prayer{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.cell-group-prayer{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.events{
+ padding-top: 50px;
+    padding-bottom:400px ;
+    background: linear-gradient(45deg,#1ce6db,#ebe707);
+/* background: linear-gradient(45deg,#eedf08,#e00d3b); */
+    /* clip-path: polygon(0% 0%,100% 0%,100% 80%,50% 100%,0% 80%); */
+    /* clip-path: polygon(0 0,100% 0,100% 90% ,0 100% ); */
+    text-align: center;
+
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.events p{
+}
+.events-hl{
+    text-align: center;
+    border-bottom: 3px solid black;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding-top: 80px;
+}
+.events p{
+    padding: 50px;
+}
+.about-us{
+    /* display: none; */
+    height: 800px;
+    /* background-color: cornsilk; */
+    /* clip-path: polygon(0 0,100% 0,100% 90% ,0 100% ); */
+    background: linear-gradient(45deg,#eedf08,#e00d3b);
+    /* clip-path: polygon(0 8%,100% 0%,100% 100%,0% 100%); */
+    margin:20px;
+    padding-top: 50px;
+}
+.about-us-hl{
+    text-align: center;
+    padding-top: 80px;
+margin-left:25%;
+margin-right: 25%;
+border-bottom: 3px solid white;
+color: white;
+}
+.prayer-request-bg{
+    height: 700px;
+    background: url(praying5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    padding-top: 100px;
+   padding-left: 25%;
+    margin: 20px;
+    /* padding-top: 80px; */
+}
+.prayer-request{
+    /* margin: 12%; */
+    /* padding-top: 300px; */
+    /* margin-right: 40%; */
+    padding-top: 20px;
+    align-items: center;
+    width:500px;
+    height: 400px;
+    padding-left: 40px;
+    background-color: rgba(133, 130, 130, 0.5);
+    border-radius: 10px;
+    box-shadow:5px 5px 5px 5px rgba(68, 67, 67, 0.5);
+    color: #fff;
+ padding-top: 80px;
+}
+.prayer-request-hl{
+    border-bottom: 3px solid black;
+    margin-right: 47%;
+  
+}
+.prayer-request p{
+    color: white;
+}
+.contact-us{
+    /* display: none; */padding-top: 80px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 70px;
+}
+.contact-us-hl{
+    /* text-align: center; */
+    border-bottom: 1px solid grey;
+    padding-top: 80px;
+}
+.contact-area{
+    display: flex;  
+    margin-top: 20px;
+    align-content: center;
+}
+.office{
+    padding-right: 5%;
+    border-right:1px solid grey ;
+}
+.office p{
+        color: grey;
+}
+.feedback{
+    padding-left: 5%;
+    padding-right: 5%;
+    border-right:1px solid grey ;
+}
+.social-media{
+    color: indigo;
+    padding-left: 5%;
+}
+.social-media-hl h2{
+    margin: 0;
+}
+.social-media-hl{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.social-media a{
+    padding: 5px;
+}
